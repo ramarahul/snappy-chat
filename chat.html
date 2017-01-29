@@ -9,93 +9,40 @@
 <body>
   <div class="member-area">
     <div class="user-info">
-      Rama Rahul
+      <span id="username"></span>
       <span class="logout">Log Out</span>
     </div>
-    <div class="members">
-      <div class="member active">
-        Ram Charan
-      </div>
-      <div class="member">
-        Allu Arjun
-      </div>
-      <div class="member">
-        Sai Dharam Tej
-      </div>
-      <div class="member">
-        Pawan Kalyan
-      </div>
-      <div class="member">
-        Varun Tej
-      </div>
-      <div class="member">
-        Sampoornesh Babu
-      </div>
+    <div class="members" id="members">
+
     </div>
   </div>
   <div class="message-area">
     <div class="chat-info">
       Ram Charan
     </div>
-    <div class="messages">
-      <div class="message">
-        Hi ra!
-      </div>
-      <div class="message-byuser">
-        Hey!
-      </div>
-      <div class="message">
-        Em chestunnav
-      </div>
-      <div class="message-byuser">
-        Timepass
-      </div>
-      <div class="message">
-        Sarle vastunna akkadiki.
-      </div>
-      <div class="message-byuser">
-        Cool! Ochchey ra bore kodutundi.
-      </div>
-      <div class="message">
-        Hi ra!
-      </div>
-      <div class="message-byuser">
-        Hey!
-      </div>
-      <div class="message">
-        Em chestunnav
-      </div>
-      <div class="message-byuser">
-        Timepass
-      </div>
-      <div class="message">
-        Sarle vastunna akkadiki.
-      </div>
-      <div class="message-byuser">
-        Cool! Ochchey ra bore kodutundi.
-      </div>
-      <div class="message">
-        Hi ra!
-      </div>
-      <div class="message-byuser">
-        Hey!
-      </div>
-      <div class="message">
-        Em chestunnav
-      </div>
-      <div class="message-byuser">
-        Timepass
-      </div>
-      <div class="message">
-        Sarle vastunna akkadiki.
-      </div>
-      <div class="message-byuser">
-        Cool! Ochchey ra bore kodutundi.
-      </div>
+    <div class="messages" id="messages">
+
     </div>
     <div class="chat-form">
-      <input type="text" class="chat-message" placeholder="Write your message and press enter..."/>
+      <input type="hidden" id="chat_id"/>
+      <input id="message-text" type="text" class="chat-message" placeholder="Write your message and click on send..."/>
+      <button id="send-button">send</button>
     </div>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDVhDNp5VBklNrtIR4TblzbNYa26h4WAa0",
+      authDomain: "snappy-997a8.firebaseapp.com",
+      databaseURL: "https://snappy-997a8.firebaseio.com",
+      storageBucket: "snappy-997a8.appspot.com",
+      messagingSenderId: "978467641988"
+    };
+    firebase.initializeApp(config);
+  </script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
 </body>
 </html>

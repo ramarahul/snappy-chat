@@ -37,7 +37,7 @@ body.homepage{
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .button:hover{
@@ -105,7 +105,7 @@ Chat Page
   margin-bottom: 10px;
   border-radius: 4px;
 }
-.message-byuser{
+.message.by-user{
   background: darkgray;
   padding: 10px;
   margin-bottom: 10px;
